@@ -16,58 +16,65 @@
     font-style: normal;
 }
 
-*{
+* {
     font-family: 'Work-Sans-Light', sans-serif;
 }
 
-body{
+body {
     margin: 0 auto;
     padding: 0 14%;
 }
+
 /*HEADER*/
-header{
+header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 75px;
     position: fixed;
     display: flex;
     justify-content: space-around;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ombre légère */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* ombre légère */
     z-index: 1000;
 
 }
 
-header img{
+header a {
+    font-size: 14px;
+}
+
+header img {
     padding: 0;
     width: 270px;
 }
 
-header nav>ul{
+header nav>ul {
     display: flex;
     list-style: none;
 }
-  
-header nav li{
+
+header nav li {
     position: relative;
     margin: 10px;
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
     color: #ababab;
     font-weight: bold;
 
 }
 
-nav a:last-child:hover{
+nav a:last-child:hover {
     display: block;
 }
 
-h1{
+h1 {
     font-size: 35px;
     text-align: center;
-    color: #0cb49c ;
+    color: #0cb49c;
 
 }
 
@@ -81,44 +88,49 @@ h1{
     margin: 0;
     display: none;
     min-width: 230px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 100;
-  }
+}
 
-  .submenu li {
-    margin: 5px 0;    /* Supprime l’écart */
-    padding: 0;   /* optionnel */
-  }
+.submenu li {
+    margin: 5px 0;
+    /* Supprime l’écart */
+    padding: 0;
+    /* optionnel */
+}
 
-  .submenu a {
-    display: block;             /* Très important pour que padding prenne effet */
-    width: 100%;                /* Pour remplir toute la largeur du <li> */
-    padding: 10px 0; 
+.submenu a {
+    display: block;
+    /* Très important pour que padding prenne effet */
+    width: 100%;
+    /* Pour remplir toute la largeur du <li> */
+    padding: 10px 0;
     left: 0;
 
-  }
+}
 
-  .submenu a:hover{
+.submenu a:hover {
     color: #00ccb1;
     background-color: #f2f2f2;
 
-  }
+}
 
-  .has-submenu:hover .submenu {
+.has-submenu:hover .submenu {
     display: block;
-  }
+}
+
 /*SECTION 1*/
-.sec1{
+.sec1 {
     margin-top: 100px;
 }
 
-.sec1 p{
+.sec1 p {
     margin-top: 35px;
     font-size: 16px;
     color: #747678;
     line-height: 25px;
     font-family: "Work-Sans-Medium";
-    
+
 }
 
 .logo-container {
@@ -131,30 +143,31 @@ h1{
     width: 40px;
 }
 
-.columns{
+.columns {
     display: flex;
     gap: 20px;
 }
 
 /*SECTION 2*/
-.sec2{
+.sec2 {
     margin-top: 85px;
     text-align: center;
 }
 
-.sec2 p{
-    
+.sec2 p {
+
     font-size: 25px;
     font-weight: 550;
 }
 
-.target{
+.target {
     position: relative;
-    flex: 1;
-    vertical-align: top; /* Très important pour aligner en haut */
+    flex: 1 1 260px;  /* base de 260px, mais peut s'étirer ou se réduire */
+    vertical-align: top;
+    /* Très important pour aligner en haut */
     display: inline-block;
-    width: 250px;
-    height: 330px;
+    width: 260px;
+    height: 350px;
     padding: 0 25px;
     margin: 0 7px;
     border-radius: 10px;
@@ -162,51 +175,54 @@ h1{
     text-align: left;
 }
 
-.target:hover{
+.target:hover {
     opacity: 0.9;
 }
 
-.target:first-child{
+.target:first-child {
     background-color: #00ccb1;
 }
 
-.target:nth-child(2){
+.target:nth-child(2) {
     background-color: #3d83df;
 }
 
-.target:nth-child(3){
+.target:nth-child(3) {
     background-color: #1b2734;
 }
 
-.target i{
+.target i {
     font-size: 20px;
     padding: 20px 0 0 0;
 }
 
-span a{
+span a {
     color: #3d83df;
     font-weight: bolder;
     text-decoration: none;
 }
 
-span a:hover{
+span a:hover {
     text-decoration: underline;
 }
 
-.target select{
+.target select {
     font-size: 18px;
     font-weight: bold;
     color: white;
     text-decoration: underline;
-    background: none; /* Supprime l’arrière-plan */
-    background-color: transparent; 
+    background: none;
+    /* Supprime l’arrière-plan */
+    background-color: transparent;
     border: none;
     margin-bottom: 10px;
 }
 
-.select{
-    position: absolute; /* nécessaire pour que bottom fonctionne */
-    bottom: 50px;           /* colle le select en bas de .target */
+.select {
+    position: absolute;
+    /* nécessaire pour que bottom fonctionne */
+    bottom: 50px;
+    /* colle le select en bas de .target */
 }
 
 option {
@@ -223,11 +239,12 @@ option {
 
 }
 
-.sponsors h1{
+.sponsors h1 {
     font-size: 25px;
     text-align: left;
 }
-.marques{
+
+.marques {
     padding-left: 50px;
 
     display: flex;
@@ -235,86 +252,92 @@ option {
 
 }
 
-.marque{
+.marque {
     display: flex;
     margin: 0 5px;
     width: 170px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
-.marque p{
+.marque p {
     font-family: "Work-Sans-SemiBold";
     color: #c4c4c4;
     font-size: 19px;
-    margin: auto 0 ;
+    margin: auto 0;
 
 }
 
-.marque:hover p{
+.marque:hover p {
     color: #00ccb1;
 }
 
-.marque img{
+.marque img {
     position: static;
     width: 20px;
     height: 20px;
     margin: auto 10px;
-    filter: grayscale(100%); /*Filter permet de changer la couleur d'une image*/
+    filter: grayscale(100%);
+    /*Filter permet de changer la couleur d'une image*/
 }
 
-.marque:hover img{
+.marque:hover img {
     filter: grayscale(0);
     mix-blend-mode: multiply;
 }
 
 /*Section 3*/
-.sec3{
+.sec3 {
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    width: 100vw; /* largeur totale de la fenêtre */
+    width: 100vw;
+    /* largeur totale de la fenêtre */
+    
     display: flex;
-    justify-content:center;
+    justify-content: center;
     background-color: #e0f4f4;
     height: 580px;
     overflow: hidden;
     color: #847e84;
 
 }
-.sec3 h1{
+
+.sec3 h1 {
     font-size: 35px;
 }
 
-.sec3 h2{
+.sec3 h2 {
     color: #00ccb1;
 }
 
-.sec3 p{
+.sec3 p {
     font-size: 14px;
     font-weight: bold;
 }
 
-.health{
+.health {
     margin-top: 50px;
 }
 
-.health h1, .health p{
+.health h1,
+.health p {
     text-align: left;
     width: 350px;
     word-wrap: break-word;
 }
 
-.sec3 img{
+.sec3 img {
     margin-top: 30px;
     width: 450px;
-    transform: translateX(-150px); /* décale l’image vers la droite de 50px */
+    transform: translateX(-150px);
+    /* décale l’image vers la droite de 50px */
 
 }
 
-.grid{
+.grid {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -323,7 +346,7 @@ option {
     /*border: 1px solid black; M'aide à voir les dimensions de la grille*/
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -336,74 +359,76 @@ option {
 }
 
 
-.card:first-child{
+.card:first-child {
     margin-top: 30px;
 }
 
-.card:last-child{
+.card:last-child {
     margin-top: -30px;
 }
 
-.card i{
+.card i {
     font-size: 30px;
     color: #00ccb1;
 }
 
-.card i:first-child{
+.card i:first-child {
     margin-top: 30px;
 }
 
-.card p{
+.card p {
     font-size: 12px;
 }
 
-.card>img{
+.card>img {
     width: 60px;
     height: 60px;
 }
 
 /*SECTION 4*/
-.sec4{
+.sec4 {
     margin-top: 80px;
     text-align: center;
 }
 
-.sec4>p{
+.sec4>p {
     width: 500px;
     color: #847e84;
     margin: 0 auto;
     font-size: 14px;
     font-family: "Work-Sans-Medium";
 }
-.grid1{
+
+.grid1 {
     padding-top: 80px;
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
-    column-gap: 10px; /* garde un espacement horizontal confortable */
+    column-gap: 10px;
+    /* garde un espacement horizontal confortable */
     justify-items: center;
     width: 960px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.grid1 img{
+.grid1 img {
     object-fit: cover;
     width: 300px;
     height: 260px;
     border-radius: 7px 7px 0 0;
 }
 
-.item{
+.item {
     border-radius: 8px;
     margin-top: 20px;
     border: 0.1px solid rgb(247, 244, 244)
 }
 
-.item:hover{
+.item:hover {
     box-shadow: 5px 5px 20px -5px rgb(0, 0, 0);
     cursor: pointer
 }
 
-.item div{
+.item div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -411,13 +436,13 @@ option {
 
 }
 
-.item p{
+.item p {
     font-size: 18px;
-    font-weight:bold;
+    font-weight: bold;
     color: #747474;
 }
 
-.item a{
+.item a {
     font-size: 10px;
 }
 
@@ -432,12 +457,13 @@ option {
 
 }
 
-.sec4>a{
+.sec4>a {
     font-size: 13px;
 
 }
+
 /*FOOTER*/
-footer{
+footer {
     border-top: 2px solid rgb(247, 244, 244);
     font-size: 12px;
     font-weight: bold;
@@ -450,13 +476,73 @@ footer{
     position: static;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #3d83df;
 
 }
 
-.sec4 a:hover{
+.sec4 a:hover {
     background-color: #1864c4;
+
+}
+
+@media screen and (max-width: 1367px) {
+    .sec1{
+        padding: 0 10%;
+    }
+
+    body {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 971px) {
+
+   .sec2{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* centre horizontalement les enfants */
+      }   
+    
+   .target{
+    max-width: 260px;
+    min-height: 350px;
+    margin: 10px 0;
+
+   }
+
+   .sponsors{
+
+   }
+}
+
+
+@media screen and (max-width: 870px) {
+    .grid1 {
+        display: flex;
+        overflow-x: auto;
+        /*Active le scroll horizontal si le contenu dépasse la largeur de l’écran.*/
+        gap: 16px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 10px;
+    }
+
+    .grid1::-webkit-scrollbar {
+        display: none;
+    }
+
+    .grid1 {
+        -ms-overflow-style: none;
+        /* IE & Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .item:hover{
+        box-shadow: none;    }
+
 
 }
