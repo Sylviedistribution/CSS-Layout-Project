@@ -4,4 +4,4 @@ For this project, I challenged myself to replicate the home page of the Docplann
 It gave me a great opportunity to practice both HTML structure with the semantic tag like <header>, <footer>, <nav>, <section> and CSS layout techniques, especially using Flexbox and Grid.
 I also integrated Font Awesome icons and focused on styling elements effectively to match the original design as closely as possible.
 
-Overall, it was a valuable hands-on experience, and I’m excited to keep improving!
+I also set the media queries for the responsivity od the web page
