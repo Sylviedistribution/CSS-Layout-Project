@@ -320,16 +320,18 @@ option {
 
 .health {
     margin-top: 50px;
+    width: 350px;
+
 }
 
 .health h1,
 .health p {
     text-align: left;
-    width: 350px;
     word-wrap: break-word;
 }
 
 .sec3 img {
+    position: absolute;
     margin-top: 30px;
     width: 450px;
     transform: translateX(-150px);
@@ -343,6 +345,7 @@ option {
     grid-template-columns: repeat(2, 1fr);
     height: 450px;
     gap: 20px;
+    z-index: 1;
     /*border: 1px solid black; M'aide à voir les dimensions de la grille*/
 }
 
@@ -389,6 +392,11 @@ option {
 .sec4 {
     margin-top: 80px;
     text-align: center;
+}
+
+.text{
+margin: 0 auto;
+width: 450px;
 }
 
 .sec4>p {
@@ -499,6 +507,10 @@ footer a {
 
 @media screen and (max-width: 971px) {
 
+    body{
+        padding: 0;
+       }
+    
    .sec2{
     
         display: flex;
@@ -514,35 +526,58 @@ footer a {
    }
 
    .sponsors{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    }
 }
 
+@media screen and (max-width: 961px){
+    .sec3{
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 800px;
+        border: 1px solid black;
 
-@media screen and (max-width: 870px) {
+    }
+
+    .sec3 img{
+        transform: translate(-350px, 100px);
+    }
+  
+
     .grid1 {
         display: flex;
+        width: auto;
         overflow-x: auto;
         /*Active le scroll horizontal si le contenu dépasse la largeur de l’écran.*/
         gap: 16px;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         padding: 10px;
-    }
-
-    .grid1::-webkit-scrollbar {
-        display: none;
-    }
-
-    .grid1 {
         -ms-overflow-style: none;
         /* IE & Edge */
         scrollbar-width: none;
         /* Firefox */
     }
 
+    .grid1 > div {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 300px;
+        min-width: 220px;
+        scroll-snap-align: start;
+    }
+
+    .grid1::-webkit-scrollbar {
+        display: none;
+    }
+
     .item:hover{
-        box-shadow: none;    }
-
-
+        box-shadow: none; 
+    }
 }
+
